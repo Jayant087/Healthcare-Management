@@ -724,6 +724,9 @@ video {
 .mb-12 {
   margin-bottom: 3rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
 .flex {
   display: flex;
 }
@@ -757,11 +760,20 @@ video {
 .max-w-\[496px\] {
   max-width: 496px;
 }
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
 .items-center {
   align-items: center;
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-items-end {
+  justify-items: end;
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -795,10 +807,6 @@ video {
 .font-sans {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -810,12 +818,13 @@ video {
 .font-medium {
   font-weight: 500;
 }
-.text-white {
+.text-dark-600 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(118 130 141 / var(--tw-text-opacity));
 }
-.underline {
-  text-decoration-line: underline;
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(36 174 124 / var(--tw-text-opacity));
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
@@ -874,6 +883,17 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.side-img {
+  display: none;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+
+  .side-img {
+    display: block;
+  }
+}
 /* ==== SUCCESS */
 /* ===== ADMIN */
 /* ==== FORM */
@@ -883,6 +903,11 @@ video {
 /* Data Table */
 /* ===== ALIGNMENTS */
 /* ===== TYPOGRAPHY */
+.text-14-regular {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
 /* =====  SHADCN OVERRIDES */
 /* =====  REACT PHONE NUMBER INPUT OVERRIDES */
 /* =====  REACT DATE PICKER OVERRIDES */
@@ -982,5 +1007,12 @@ video {
 
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:text-left {
+    text-align: left;
+  }
 }
 
